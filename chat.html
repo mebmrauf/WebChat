@@ -108,7 +108,7 @@
         let socket, username, targetUsername;
 
         // WebSocket connection
-        socket = new WebSocket('ws://localhost:8080');
+        socket = new WebSocket('wss://webchat-ngui.onrender.com');
 
         socket.onmessage = (event) => {
             const data = JSON.parse(event.data);
